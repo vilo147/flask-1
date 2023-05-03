@@ -1,0 +1,8 @@
+<div class="col-md-4">
+  <h5>Категории</h5>
+  <ul class="list-group">
+    {%for i in category%}
+    <li class="list-group-item"><a href="{{url_for('category', id=i.id)}}">{{i.title}}</a></li>
+    {%endfor%}
+  </ul>
+</div>
